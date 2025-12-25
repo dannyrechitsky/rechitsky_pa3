@@ -13,4 +13,20 @@ wheels/
 .vscode/
 .idea/
 
-#
+# Slurm guide pdf
+slurm-tutorial.pdf
+slurm-tutorial.pdf:Zone.Identifier
+
+# scratch, error logging, notebooks, etc.
+error_recent.txt
+src/explore.ipynb
+src/eval_small.ipynb
+src/toy_results
+sample.json
+Readme.md
+Task2/src/explore.ipynb
+src/train_set_size.ipynb
+
+# misc.
+Project-3.pdf
+error_recent.txt
