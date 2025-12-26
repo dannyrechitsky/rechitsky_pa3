@@ -112,8 +112,11 @@ if __name__ == "__main__":
     data_collator = DataCollatorWithPadding(tokenizer)
 
     # set output directory
-    experiment_name = f"rank={args.lora_rank}_size={args.train_pct}"
-    output_dir = os.path.join("results", experiment_name)
+    if args.model_type=='finetuned':
+        exp_name = f"train={args.train_pct}_rank={args.lora_rank}"
+    else: # pretrained
+        exp_name = f"pretrained"
+    output_dir = os.path.join("results", exp_name)
 
     #---Load Model---#
 

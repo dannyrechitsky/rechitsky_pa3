@@ -42,12 +42,11 @@ source ../.venv/bin/activate
 uv run main.py --model_type pretrained
 
 # run different training sizes (30%, 50% and 100%) fixed at lora rank 8
-# uv run main.py --train_pct 0.3 --lora_rank 8 --epochs 3 --load_model_path latest
-# uv run main.py --train_pct 0.5 --lora_rank 8 --epochs 3 --load_model_path latest
-# uv run main.py --train_pct 1.0 --lora_rank 8 --epochs 3 --load_model_path latest 
+uv run main.py --train_pct 0.3 --lora_rank 8 --epochs 3 --load_model_path latest
+uv run main.py --train_pct 0.5 --lora_rank 8 --epochs 3 --load_model_path latest
+uv run main.py --train_pct 1.0 --lora_rank 8 --epochs 3 --load_model_path latest 
 
 # run different LoRA ranks with 100% training data
-# uv run main.py --train_pct 1.0 --lora_rank 8 --epochs 3 --load_model_path latest
 uv run main.py --train_pct 1.0 --lora_rank 16 --epochs 3 --load_model_path latest 
 uv run main.py --train_pct 1.0 --lora_rank 32 --epochs 3 --load_model_path latest 
 

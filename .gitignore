@@ -30,3 +30,17 @@ src/train_set_size.ipynb
 # misc.
 Project-3.pdf
 error_recent.txt
+src/results/
+src/logs
+report.md
+report_assets.json
+Task2/src/logs
+src/generate_combined_loss_svgs.py
+src/generate_loss_svgs.py
+src/generate_task2_loss_svgs_pngs.py
+src/generate_task2_loss_svgs.py
+src/generate_combined_loss_svgs.py
+src/plot_task2_metrics.py
+src/write_task2_svg.py
+src/results
+figures

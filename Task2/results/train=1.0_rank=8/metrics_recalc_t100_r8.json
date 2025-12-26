@@ -1,0 +1,9 @@
+{
+    "BLEU": 36.06426873255003,
+    "execution_accuracy": 35.774647887323944,
+    "syntax_pass_rate": 52.256699576868826,
+    "total_samples": 9926,
+    "executable_samples": 2485,
+    "syntax_passes": 5187,
+    "execution_matches": 889
+}

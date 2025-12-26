@@ -27,17 +27,14 @@ source .venv/bin/activate
 # TASK 1 ENCODER - RoBERTa QA ###
 
 # run baseline pretrained model
-# uv run main.py --model_type pretrained
+uv run main.py --model_type pretrained
 
 # run different training sizes (30%, 50% and 100%) with fixed LoRA rank 8
 uv run main.py --train_pct 0.3 --lora_rank 8 --epochs 3 --load_model_path latest 
 uv run main.py --train_pct 0.5 --lora_rank 8 --epochs 3 --load_model_path latest
-# uv run main.py --train_pct 1.0 --lora_rank 8 --epochs 3 --load_model_path latest
+uv run main.py --train_pct 1.0 --lora_rank 8 --epochs 3 --load_model_path latest
 
 # run different LoRA ranks with 100% training data (=best results from above runs)
-# uv run main.py --train_pct 1.0 --lora_rank 8 --epochs 3 --load_model_path latest
-# uv run main.py --train_pct 1.0 --lora_rank 16 --epochs 3 --load_model_path latest 
-# uv run main.py --train_pct 1.0 --lora_rank 32 --epochs 3 --load_model_path latest 
-
-# NOTE current full training steps --train_steps 9799 (2+ epochs)
+uv run main.py --train_pct 1.0 --lora_rank 16 --epochs 3 --load_model_path latest 
+uv run main.py --train_pct 1.0 --lora_rank 32 --epochs 3 --load_model_path latest 
 
